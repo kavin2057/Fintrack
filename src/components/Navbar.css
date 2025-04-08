@@ -1,0 +1,157 @@
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  padding: 0 20px;
+  background: linear-gradient(to right, #2c3e50, #4ca1af);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin: 10px 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand h2 {
+  color: white;
+  margin: 0;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 24px;
+}
+
+.navbar {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.navbar li {
+  position: relative;
+  margin: 0 20px;
+}
+
+.navbar li p {
+  color: white;
+  font-weight: 500;
+  margin: 0;
+  padding: 16px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+}
+
+.navbar li p i:first-child {
+  margin-right: 8px;
+}
+
+.navbar li a {
+  text-decoration: none;
+  padding: 12px 16px;
+  display: block;
+  color: #333;
+  transition: all 0.2s ease;
+  font-weight: 400;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+  z-index: 1;
+  min-width: 220px;
+  border-radius: 8px;
+  overflow: hidden;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+  left: -20px;
+  top: 100%;
+}
+
+.dropdown-content a {
+  color: #333;
+  padding: 12px 20px;
+  text-decoration: none;
+  display: block;
+  font-size: 14px;
+  border-left: 3px solid transparent;
+}
+
+.dropdown-content a i {
+  margin-right: 10px;
+  width: 16px;
+  text-align: center;
+  color: #4ca1af;
+}
+
+.dropdown-content a:hover {
+  background-color: #f5f5f5;
+  border-left: 3px solid #4ca1af;
+  color: #2c3e50;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  transform: translateY(0);
+}
+
+.dropdown:hover p {
+  background-color: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+}
+
+p:hover {
+  cursor: pointer;
+}
+
+.navbar-user {
+  display: flex;
+  align-items: center;
+}
+
+.user-profile {
+  color: white;
+  font-size: 24px;
+  margin-left: 20px;
+  transition: all 0.3s ease;
+}
+
+.user-profile:hover {
+  color: rgba(255, 255, 255, 0.8);
+  transform: scale(1.1);
+}
+
+hr {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .navbar-container {
+    flex-direction: column;
+    padding: 10px;
+  }
+  
+  .navbar {
+    margin-top: 15px;
+    flex-wrap: wrap;
+  }
+  
+  .navbar li {
+    margin: 5px 10px;
+  }
+  
+  .dropdown-content {
+    left: 0;
+    width: 100%;
+  }
+}

@@ -1,0 +1,161 @@
+.vend-container {
+  padding: 20px;
+  background-color: #f8fdff;
+  font-family: Arial, sans-serif;
+  top: 0%;
+}
+
+.vend-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.vend-section {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.vend-section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.vend-button {
+  padding: 10px 20px;
+  background: linear-gradient(to right, #2c8489, #244243);
+  border-radius: 20px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.vend-button:hover {
+  background-color: #0056b3;
+}
+
+.vend-message {
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+}
+
+.vend-message.success {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.vend-message.error {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.vend-loading {
+  font-size: 16px;
+  text-align: center;
+  padding: 20px;
+  color: #666;
+}
+
+
+.customer-search-container {
+  margin-bottom: 20px;
+}
+
+.customer-search-input {
+   width:97%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+}
+
+.search-container {
+  margin-bottom: 25px;
+}
+
+.search-input {
+  width: 97%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+}
+
+.vend-list {
+  margin-top: 20px;
+  overflow-x: auto;
+}
+
+.vend-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.vend-table th, .vend-table td {
+  padding: 10px;
+  border: 1px solid #e9e6e6;
+  text-align: left;
+}
+
+.vend-table th {
+  background-color: #f2f2f1;
+  font-weight: 600;
+}
+
+.vend-table th:last-child, .vend-table td:last-child {
+  position: sticky;
+  right: 0;
+  background-color: #f2f2f1; /* Match the table header background color */
+  z-index: 1;
+  padding-right: 55px;
+  padding-left: 30px;
+  text-align: center;
+}
+
+.vend-action-button {
+  padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    display: inline-flex;
+    flex-direction: row;
+    height: 35px;
+    margin-top: 25px;
+}
+
+.vend-action-button.edit {
+  background: linear-gradient(to right, #509599, #3c6e71);
+  color: white;
+}
+
+.vend-action-button.edit:hover {
+  background: linear-gradient(to right, #1e3c3e, #2e858a);
+}
+
+.vend-action-button.delete {
+  padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(to right, #ff5f5f, #41181a);
+    color: white;
+}
+
+.vend-action-button.delete:hover {
+  background: linear-gradient(to right, #5b2828, #b94a59);
+  /* Darker gradient on hover */
+}
+
+.product-details-ac{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  height: 100px;
+  
+}
